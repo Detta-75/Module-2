@@ -1,10 +1,11 @@
 package view;
 
-import controller.VehicleController;
+
+import controller.MenuController;
 
 public class Main {
     public static void main(String[] args) {
-        VehicleController vehicleController = new VehicleController();
-        vehicleController.showVehicleMenu();
+        MenuController menuController = new MenuController();
+        menuController.mainMenu();
     }
 }

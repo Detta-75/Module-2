@@ -9,9 +9,11 @@ public interface IVehicleService {
 
     void addVehicle(Vehicle vehicle);
 
-    void removeVehicle(String licensePlate);
+    void deleteVehicle(String licensePlate);
 
-    Vehicle findVehicleByLicensePlate(String licensePlate);
 
+    void updateVehicle(Vehicle vehicle);
+
+    Vehicle findByLicensePlate(String licensePlate);
 
 }
