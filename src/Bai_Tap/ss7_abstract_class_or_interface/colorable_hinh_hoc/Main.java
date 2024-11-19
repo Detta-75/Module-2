@@ -8,8 +8,8 @@ public class Main {
         geometric[2] = new Square();
 
         for (Geometric geometrics: geometric) {
-            if (geometrics instanceof Colorable) {
-                System.out.println(((Colorable) geometrics).howToColer());
+            if (geometrics instanceof IColorable) {
+                System.out.println(((IColorable) geometrics).howToColer());
             }
         }
     }

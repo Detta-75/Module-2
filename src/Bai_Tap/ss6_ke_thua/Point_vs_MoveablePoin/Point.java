@@ -1,7 +1,8 @@
 package Bai_Tap.ss6_ke_thua.Point_vs_MoveablePoin;
 
 public class Point {
-    private float x, y;
+    protected float x = 0.0f;
+    protected float y = 0.0f;
 
     public Point() {
     }
@@ -38,9 +39,8 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Point: " +
+                "x= " + x +
+                ", y= " + y;
     }
 }

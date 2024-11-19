@@ -26,11 +26,11 @@ public class Circle {
     }
 
     public double getArea() {
-        return 3.14 * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
     public String toString() {
-        return "Circle: Radius= " + radius + ", Color= " + color;
+        return "Circle: Radius= " + radius + ", Color= " + color + ", Area= " + getArea();
     }
 }

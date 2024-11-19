@@ -1,6 +1,6 @@
 package Bai_Tap.ss7_abstract_class_or_interface.resizeable_hinh_hoc;
 
-public class Circle extends Geometric implements Resizeable{
+public class Circle extends Geometric implements IResizeable {
     private double radius;
 
     public Circle() {

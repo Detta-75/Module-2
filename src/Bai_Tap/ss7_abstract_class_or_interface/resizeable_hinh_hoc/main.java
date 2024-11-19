@@ -19,7 +19,7 @@ public class main {
         System.out.println("After-Area");
         for (Geometric geometric: geometrics) {
             double percent = 1 + random.nextInt(100);
-            ((Resizeable) geometric).reSize(percent);
+            ((IResizeable) geometric).reSize(percent);
         }
         for (Geometric geometric: geometrics) {
             System.out.println(geometric.getArea());

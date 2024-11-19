@@ -1,7 +1,8 @@
 package Bai_Tap.ss6_ke_thua.Point_vs_MoveablePoin;
 
 public class MoveablePoint extends Point {
-    private float xSpeed, ySpeed;
+    private float xSpeed = 0.0f;
+    private float ySpeed = 0.0f;
 
     public MoveablePoint() {
         super();
@@ -15,6 +16,7 @@ public class MoveablePoint extends Point {
     }
 
     public MoveablePoint(float xSpeed, float ySpeed) {
+        super();
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
@@ -44,13 +46,16 @@ public class MoveablePoint extends Point {
         return new float[]{xSpeed, ySpeed};
     }
 
-    @Override
-    public String toString() {
-        return "(" + getX() + ", " + getY() + ") speed =" + " (" + xSpeed + ", " + ySpeed + ")";
-    }
-
     public MoveablePoint move() {
-        setXY(getX() + xSpeed, getY() + ySpeed);
+        this.x += xSpeed;
+        this.y += ySpeed;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "MovablePoint: (" + getX() + ", " + getY() + ") speed =" + " (" + xSpeed + ", " + ySpeed + ")";
+    }
+
+
 }

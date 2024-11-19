@@ -11,6 +11,7 @@ public class StudentService implements IStudenService {
 
     @Override
     public List<Student> getAll() {
+
         return studentRepository.getAll();
     }
 

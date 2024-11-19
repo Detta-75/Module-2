@@ -1,6 +1,6 @@
 package Bai_Tap.ss7_abstract_class_or_interface.resizeable_hinh_hoc;
 
-public class Rectangle extends Geometric implements Resizeable {
+public class Rectangle extends Geometric implements IResizeable {
     private double width = 1.0;
     private double length = 1.0;
 
