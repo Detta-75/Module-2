@@ -1,4 +1,4 @@
-package Bai_Tap.ss10_dsa_danh_sach.Trien_Khai_Lop_LinkedList;
+package Bai_Tap.ss10_dsa_danh_sach.trien_Khai_Lop_LinkedList;
 
 public class TestMyLinkedList {
     public static void main(String[] args) {
